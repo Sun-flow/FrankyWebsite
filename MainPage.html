@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Cowboy Potatoes</title>
+    <link href="css/MainPage.css" type="text/css" rel="stylesheet">
+    <link href="AnonymousPro/webfontkit-20200123-012554/stylesheet.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="split-vert left">
+
+    <div class="heading">
+      
+      <img class="logo" src="images/fs-logo.png">
+
+      <h1>
+        Franchesca Spektor
+      </h1>
+      <h2>
+        Design Researcher
+      </h2>
+
+      <div class="body">
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          <br><br>
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+      </div>
+
+    </div>
+    
+
+    <div class="linkers">
+      <ul>
+
+        <a href="images/FSpektor_CV.pdf">CV / Resume</a>
+        <a href="Misc">Miscellany</a>
+        <a href="Writing">Writing</a>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="split-vert right">
+
+    <div class="slideshow-container">
+
+      <div class="slides fade">
+
+        <div class="split-hori top">
+          <div class="proj-heading">
+            <p class="projtitle">Gena</p>
+            <p class ="projdate">April 2019</p>
+          </div>
+          <img ID="fill" src="images/proj1.png">
+        </div>>
+
+        <div class="split-hori bottom">
+          <div class="proj-info">
+            <p>
+              Here is info about Gena
+              <br>
+              Lorem ipsum dolor sit amet, mel debet decore aperiri ea, et nam perfecto atomorum referrentur, at mel phaedrum deseruisse. His ex nulla neglegentur, sint assentior pri ea. Decore utinam graeco in nec, tation nostrum accumsan at mea. Ludus discere sed in. No iusto impedit eligendi cum.
+            </p>
+          
+            <div class="read-more-link">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slides fade">
+        <div class="split-hori top">
+          <div class="proj-heading">
+            <p class="projtitle">Sole Mix</p>
+            <p class="projdate">March 2019</p>
+          </div>
+          <img ID="fill" src="images/proj2.png">
+        </div>
+
+        <div class="split-hori bottom">
+          <div class="proj-info">
+            <p>
+              Here is info about Sole Mix
+              <br>
+              Lorem ipsum dolor sit amet, mel debet decore aperiri ea, et nam perfecto atomorum referrentur, at mel phaedrum deseruisse. His ex nulla neglegentur, sint assentior pri ea. Decore utinam graeco in nec, tation nostrum accumsan at mea. Ludus discere sed in. No iusto impedit eligendi cum.
+            </p>
+          
+            <div class="read-more-link">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div ID="fill" class="slides fade">
+
+        <div class="split-hori top">
+          <div class="proj-heading">
+            <p class="projtitle">Nostrum</p>
+            <p class="projdate">November 2018</p>
+          </div>
+          <img ID="fill" src="images/proj3.png" style="width:100%">
+        </div>
+
+        <div class="split-hori bottom">
+          <div class="proj-info">
+            <p>
+              Here is info about Nostrum
+              <br>
+              Lorem ipsum dolor sit amet, mel debet decore aperiri ea, et nam perfecto atomorum referrentur, at mel phaedrum deseruisse. His ex nulla neglegentur, sint assentior pri ea. Decore utinam graeco in nec, tation nostrum accumsan at mea. Ludus discere sed in. No iusto impedit eligendi cum.
+            </p>
+          
+            <div class="read-more-link">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class ="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+
+    <div class="buttons" style="text-align: left">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n){
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if(n < 1) {slideIndex = slides.length}
+      for(i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+      }
+      for(i = 0; i < dots.length; i++){
+        dots[i].className = "dot";
+      }
+
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+  </script>
+
+  </div>
+
+</body>
+
