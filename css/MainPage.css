@@ -122,9 +122,9 @@ body{
 
 .proj-info {
   position: absolute;
-  font-size: calc(10px + (4) * ((100vw - 500px) / (900 - 500)));
+  font-size: calc(9px + (3) * ((100vw - 500px) / (900 - 500)));
   width: 70%;
-  bottom: 7vh;
+  bottom: 10vh;
   right: 10%;
   margin: 0;
   text-align: right;
@@ -134,7 +134,7 @@ body{
   font-family: nonymous_probold;
   color: white;
   text-decoration: none;
-  font-size: calc(12px + (6) * ((100vw - 500px) / (900 - 500)));
+  font-size: calc(12px + (4) * ((100vw - 500px) / (900 - 500)));
 }
 
 .buttons {
@@ -223,7 +223,7 @@ body{
 }
 
 .linkers ul {
-  font-size: 1.5vw;
+  font-size: calc(12px + (2) * ((100vw - 500px) / (900 - 500)));
   display: flex;
   justify-content: space-around;
   list-style: none;
